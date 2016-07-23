@@ -36,14 +36,10 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.LEVER)){
 					return 100;
 				}
-				if (fuel.getItem() == Item.getItemFromBlock(Blocks.GRASS)){
-					return 100;
-				}
 				//Fix for tall grass and all other doubly tall plants
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.DOUBLE_PLANT)){
 					return 200;
 				}
-				//Flowers start here
 				//This code SHOULD cover all flowers.
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.RED_FLOWER)){
 					return 100;
@@ -51,7 +47,6 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.YELLOW_FLOWER)){
 					return 100;
 				}
-				//Flowers end here
 				if (fuel.getItem() == Items.ITEM_FRAME){
 					return 900;
 				}
@@ -67,7 +62,6 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.LADDER)){
 					return 300;
 				}
-				//Rails start here
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.RAIL)) {
 					return 100;
 				}
@@ -80,14 +74,12 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.GOLDEN_RAIL)){
 					return 100;
 				}
-				//Pistons start here
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.PISTON)){
 					return 1000;
 				}
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.STICKY_PISTON)){
 					return 1100;
 				}
-				//Pistons end here
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.VINE)){
 					return 100;
 				}
@@ -100,14 +92,12 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.HAY_BLOCK)){
 					return 900;
 				}
-				//Wool and Carpet handled here
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.CARPET)){
 					return 200;
 				}
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.WOOL)){
 					return 200;
 				}
-				//Arrows handled here
 				if (fuel.getItem() == Items.ARROW){
 					return 100;
 				}
@@ -158,14 +148,12 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Items.SPRUCE_DOOR){
 					return 600;
 				}
-				//Buttons
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.WOODEN_BUTTON)){
 					return 300;
 				}
 				if (fuel.getItem() == Items.BOWL){
 					return 300;
 				}
-				//Updated boat handler to 1.9 to include different woods.
 				if (fuel.getItem() == Items.BOAT){
 					return 1500;
 				}
@@ -184,7 +172,6 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Items.SPRUCE_BOAT){
 					return 1500;
 				}
-				//End of new boat handling procedure
 				if (fuel.getItem() == Items.REEDS){
 					return 300;
 				}
@@ -212,7 +199,6 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Items.FILLED_MAP){
 					return 2500;
 				}
-				//Fishing Rods and Carrot on a Stick.
 				if (fuel.getItem() == Items.FISHING_ROD){
 					return 300;
 				}
