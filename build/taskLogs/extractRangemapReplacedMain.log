@@ -1,13 +1,12 @@
 Symbol range map extraction starting
 Processing 13 files
-startProcessing "com\bored\morefuelsmod\Fuels.java" md5: 6dc7637f0cf81cc9f6dac23a42730ac0
-Cache Hit!
+startProcessing "com\bored\morefuelsmod\Fuels.java" md5: fa94c01e838fbaa46501dfbed4373891
 endProcessing "com\bored\morefuelsmod\Fuels.java"
 
-startProcessing "com\bored\morefuelsmod\Main.java" md5: 92dc13eccc44e1454f054bb00f9a0853
+startProcessing "com\bored\morefuelsmod\Main.java" md5: c3f9bcc8e837e48748cb92f1a842e3f5
 endProcessing "com\bored\morefuelsmod\Main.java"
 
-startProcessing "com\bored\morefuelsmod\ModCrafting.java" md5: ef8f53f6a116e203cec463308946519a
+startProcessing "com\bored\morefuelsmod\ModCrafting.java" md5: 69c57f1fb60e7f310c8770abb7f7ed29
 endProcessing "com\bored\morefuelsmod\ModCrafting.java"
 
 startProcessing "com\bored\morefuelsmod\ModSmelting.java" md5: b3f83b3d58b43b509ddb716df723f105
