@@ -38,6 +38,7 @@ import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.fml.common.LoaderState.ModState;
 import net.minecraftforge.fml.common.ModContainer.Disableable;
 import net.minecraftforge.fml.common.ProgressManager.ProgressBar;
+import net.minecraftforge.fml.common.discovery.ASMDataTable;
 import net.minecraftforge.fml.common.discovery.ModDiscoverer;
 import net.minecraftforge.fml.common.event.FMLInterModComms;
 import net.minecraftforge.fml.common.event.FMLLoadEvent;
@@ -204,7 +205,7 @@ public class Loader
         }
 
         modClassLoader = new ModClassLoader(getClass().getClassLoader());
-        if (!mccversion.equals(MC_VERSION))
+        if (mccversion !=null && !mccversion.equals(MC_VERSION))
         {
             FMLLog.severe("This version of FML is built for Minecraft %s, we have detected Minecraft %s in your minecraft jar file", mccversion, MC_VERSION);
             throw new LoaderException(String.format("This version of FML is built for Minecraft %s, we have detected Minecraft %s in your minecraft jar file", mccversion, MC_VERSION));
@@ -489,10 +490,23 @@ public class Loader
     }
 
     /**
+     * Used to setup a testharness with a single dummy mod instance for use with various testing hooks
+     * @param dummycontainer A dummy container that will be returned as "active" for all queries
+     */
+    public void setupTestHarness(ModContainer dummycontainer)
+    {
+        modController = new LoadController(this);
+        mods = Lists.newArrayList(dummycontainer);
+        modController.transition(LoaderState.LOADING, false);
+        modController.transition(LoaderState.CONSTRUCTING, false);
+        ObjectHolderRegistry.INSTANCE.findObjectHolders(new ASMDataTable());
+        modController.forceActiveContainer(dummycontainer);
+    }
+    /**
      * Called from the hook to start mod loading. We trigger the
      * {@link #identifyMods()} and Constructing, Preinitalization, and Initalization phases here. Finally,
      * the mod list is frozen completely and is consider immutable from then on.
-     * @param injectedModContainers
+     * @param injectedModContainers containers to inject
      */
     public void loadMods(List<String> injectedModContainers)
     {
@@ -1023,7 +1037,10 @@ public class Loader
 
     public void fireRemapEvent(Map<ResourceLocation, Integer[]> remapBlocks, Map<ResourceLocation, Integer[]> remapItems, boolean isFreezing)
     {
-        modController.propogateStateMessage(new FMLModIdMappingEvent(remapBlocks, remapItems, isFreezing));
+        if (modController!=null)
+        {
+            modController.propogateStateMessage(new FMLModIdMappingEvent(remapBlocks, remapItems, isFreezing));
+        }
     }
 
     public void runtimeDisableMod(String modId)

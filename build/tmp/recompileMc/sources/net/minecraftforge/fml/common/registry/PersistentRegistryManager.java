@@ -63,7 +63,7 @@ import net.minecraftforge.fml.common.EnhancedRuntimeException.WrappedPrintStream
 @SuppressWarnings("WeakerAccess")
 public class PersistentRegistryManager
 {
-    private enum PersistentRegistry
+    enum PersistentRegistry
     {
         ACTIVE, VANILLA, FROZEN, STAGING;
 
@@ -366,7 +366,7 @@ public class PersistentRegistryManager
         newRegistry.loadIds(frozenRegistry.getEntriesNotIn(newRegistry), Maps.<ResourceLocation, Integer>newLinkedHashMap(), remaps.get(registryName), frozenRegistry, registryName);
     }
 
-    // TODO: Remove when we don't care about loading 1.7.10(?) worlds?
+    // TODO: Remove in 1.11 when we don't care about loading 1.8 worlds and below
     private static ResourceLocation getFixedName(ResourceLocation registryName)
     {
         //Translate old names
