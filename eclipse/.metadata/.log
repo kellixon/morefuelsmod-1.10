@@ -1706,3 +1706,6 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: 49
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-07-28 23:16:00.141
+!MESSAGE The workspace will exit with unsaved changes in this session.
