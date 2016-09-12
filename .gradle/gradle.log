@@ -28,7 +28,7 @@ This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peri
 :testClasses UP-TO-DATE
 :test UP-TO-DATE
 :extractMcpData SKIPPED
-:extractMcpMappings
+:extractMcpMappings SKIPPED
 :getVersionJson
 :extractUserdev UP-TO-DATE
 :genSrgs SKIPPED
@@ -44,4 +44,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 13.496 secs
+Total time: 7.796 secs
