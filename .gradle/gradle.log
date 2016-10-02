@@ -10,12 +10,26 @@ This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peri
          R4wk, ZeuX, IngisKahn, bspkrs           
 #################################################
 :deobfCompileDummyTask
+:getVersionJson
+:extractUserdev
+:downloadClient
+:downloadServer
+:splitServerJar
+:mergeJars
+:applyBinaryPatches
 :deobfProvidedDummyTask
+:extractDependencyATs SKIPPED
+:extractMcpData
+:extractMcpMappings
+:genSrgs
+:deobfMcMCP
+Applying SpecialSource...
+Applying Exceptor...
 :sourceApiJava UP-TO-DATE
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava
+:sourceMainJava UP-TO-DATE
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
 1 warning
 
@@ -27,11 +41,6 @@ This mapping 'snapshot_20160518' was designed for MC 1.9.4! Use at your own peri
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
 :test UP-TO-DATE
-:extractMcpData SKIPPED
-:extractMcpMappings
-:getVersionJson
-:extractUserdev UP-TO-DATE
-:genSrgs SKIPPED
 :reobfJar
 :extractRangemapReplacedMain
 C:\Users\Noah\Desktop\Coding\MoreFuelsMod\morefuelsmod-1.10\build\sources\main\java
@@ -44,4 +53,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 12.633 secs
+Total time: 31.13 secs

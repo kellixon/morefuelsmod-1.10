@@ -470,6 +470,7 @@ Class End  : com.bored.morefuelsmod.Fuels
 endProcessing "com\bored\morefuelsmod\Fuels.java"
 
 startProcessing "com\bored\morefuelsmod\Main.java" md5: ca5d9d52f22e9c1f357e3f7a7ee9a87a
+Cache Hit!
 @|com\bored\morefuelsmod\Main.java|8|30|com.bored.morefuelsmod|package|com.bored.morefuelsmod|(file)
 Class Start: com.bored.morefuelsmod.Main
    @|com\bored\morefuelsmod\Main.java|696|699|Mod|class|net.minecraftforge.fml.common.Mod
