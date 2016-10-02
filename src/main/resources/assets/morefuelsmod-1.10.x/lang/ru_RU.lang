@@ -1,18 +1,18 @@
-##All Russian Translation Done With Google Translate! If there are errors, email me at treeclan12@gmail.com to correct them or commit to github repo
+##Russian Translation by kellixon. MoreFuelsMod-1.10.x-1.5.2 (2 oct. 2016).
 
 #Items
-item.pelletsFuel.name=топливные гранулы (Toplivnyye Granuly)
-item.concentratedPelletsFuel.name=Концентрированные топливные гранулы (Kontsentrirovannyye Toplivnyye Granuly)
-item.coke.name=кокс (топливо) (Koks (Toplivo))
-item.bituminousCoal.name=битуминозный уголь (Bituminoznyy Ugol')
-item.canSlimoline.name=может из Slimoline (Mozhet Iz Slimoline)
-item.dustCoal.name=угольная пыль (Ugol'naya Pyl')
+item.pelletsFuel.name=Топливные гранулы
+item.concentratedPelletsFuel.name=Концентрированные топливные гранулы
+item.coke.name=Кокс
+item.bituminousCoal.name=Битуминозный уголь
+item.canSlimoline.name=Слизневая канистра
+item.dustCoal.name=Угольная пыль
 
 #Blocks
-tile.pelletBlock.name=блок гранул топлива (Blok Granul Topliva)
-tile.concentratedPelletBlock.name=блок концентрированного гранул топлива (Blok Kontsentrirovannogo Granul Topliva)
-tile.cokeBlock.name=блок кокса (топлива) (Blok Koksa (Topliva))
-tile.bituminousCoalOre.name=каменный уголь руда (Kamennyy Ugol' Ruda)
+tile.pelletBlock.name=Блок топливных гранул
+tile.concentratedPelletBlock.name=Блок концентрированных топливных гранул
+tile.cokeBlock.name=Блок кокса
+tile.bituminousCoalOre.name=Руда битуминозного угля
 
 #Tabs
-itemGroup.morefuelsmod-1.10.x=модификация больше топлива (Modifikatsiya Bol'she Topliva)
+itemGroup.morefuelsmod-1.10.x=More Fuels Mod
