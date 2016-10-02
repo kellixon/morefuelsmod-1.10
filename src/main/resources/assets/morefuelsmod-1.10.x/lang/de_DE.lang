@@ -15,4 +15,4 @@ tile.cokeBlock.name=Block von Koks (Brennstoff)
 tile.bituminousCoalOre.name=Bituminoser Kohle Erz
 
 #Tabs
-itemGroup.morefuelsmod-bleeding=Mehr Brennstoffe Modifikation
+itemGroup.morefuelsmod-1.10.x=Mehr Brennstoffe Modifikation

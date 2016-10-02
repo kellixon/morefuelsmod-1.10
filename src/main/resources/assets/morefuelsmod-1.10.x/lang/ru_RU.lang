@@ -15,4 +15,4 @@ tile.cokeBlock.name=блок кокса (топлива) (Blok Koksa (Topliva))
 tile.bituminousCoalOre.name=каменный уголь руда (Kamennyy Ugol' Ruda)
 
 #Tabs
-itemGroup.morefuelsmod-bleeding=модификация больше топлива (Modifikatsiya Bol'she Topliva)
+itemGroup.morefuelsmod-1.10.x=модификация больше топлива (Modifikatsiya Bol'she Topliva)
